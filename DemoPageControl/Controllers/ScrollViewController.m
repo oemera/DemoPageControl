@@ -43,6 +43,7 @@ static NSUInteger kNumberOfPages = 3;
 	
     self.pageControl.numberOfPages = kNumberOfPages;
     self.pageControl.currentPage = 0;
+    [self.view bringSubviewToFront:self.pageControl];
 	
     // pages are created on demand
     // load the visible page
